@@ -1,0 +1,28 @@
+<div class="contents">
+  <h2><%= @post.title%></h2>
+  <p><%= image_tag @post.image.url %></p>
+  <p><%= simple_format @post.body %></p>
+
+  <%= link_to 'EDIT', edit_post_path(@post), class: "btn editbtn" %>
+  <%= link_to 'DELETE', post_path(@post), method: :delete, class: "btn deletebtn", data: { confirm: '削除しますか？' } %>
+
+  <h3>Comments</h3>
+  <%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
+
+  <% if @post.comments.any? %>
+    <ul>
+    <% @post.comments.each do |comment| %>
+      <li class="comment">
+        <%= comment.body %>
+      </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>  

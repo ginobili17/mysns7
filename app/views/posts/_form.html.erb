@@ -1,0 +1,20 @@
+<%= form_for @post do |f| %>
+
+<% if @post.errors.messages[:title].any? %>
+<span class="error"><%= @post.errors.messages[:title][0] %></span>
+<% end %>
+<p><%= f.text_field :title, placeholder: 'title' %></p>
+
+<% if @post.errors.messages[:body].any? %>
+<span class="error"><%= @post.errors.messages[:body][0] %></span>
+<% end %>
+<p><%= f.text_area :body, placeholder: 'text' %></p>
+
+<% if @post.errors.messages[:image].any? %>
+<span class="error"><%= @post.errors.messages[:image][0] %></span>
+<% end %>
+<%= f.file_field :image %>
+
+<p><%= f.submit %></p>
+
+<% end %>

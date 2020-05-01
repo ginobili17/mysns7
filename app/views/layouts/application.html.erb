@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mysns7</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header class="header">
+        <h1 class="header-top"><%= link_to "MY SNS", root_path, class: "btn rootbtn" %></h1>
+        <ul class="header-lists">
+          <li class="header-list">
+            <%= link_to "ADD NEW", new_post_path, class: "btn addnewbtn"%>
+          </li>
+        </ul>
+    </header>
+
+
+    <%= yield %>
+
+
+  </body>
+
+</html>
