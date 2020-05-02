@@ -1,5 +1,10 @@
 <%= form_for @post do |f| %>
 
+<% if @post.errors.messages[:category_ids].any? %>
+<span class="error"><%= @post.errors.messages[:category_ids][0] %></span>
+<% end %>
+<%= f.collection_select :category_ids, Category.all, :id, :name %>
+
 <% if @post.errors.messages[:title].any? %>
 <span class="error"><%= @post.errors.messages[:title][0] %></span>
 <% end %>
