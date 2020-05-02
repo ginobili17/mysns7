@@ -1,11 +1,15 @@
 class PostsController < ApplicationController
+  before_action :move_to_index, except: [:index, :show]
+  
 
   def index
-    @posts = Post.all.order(created_at: 'desc')
+    @posts = Post.all.order(created_at: 'desc').includes(:user)
   end
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user)
   end
 
   def new
@@ -42,7 +46,11 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :body, :image)
+      params.require(:post).permit(:title, :body, :image).merge(user_id: current_user.id)
+    end
+
+    def move_to_index
+      redirect_to action: :index unless user_signed_in?
     end
 
 end

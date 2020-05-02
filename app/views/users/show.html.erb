@@ -1,0 +1,14 @@
+<div class="contents">
+  <h2>PAGE</h2>
+  <div class="content">
+    <p class="name"><%= @name %></p>
+      <ul class="content-lists">
+        <% @posts.each do |post| %>
+          <li class="content-list">
+            <%= link_to image_tag(post.image.url, class: 'post-image'), post_path(post) %>
+            <p class="post-title"><%= post.title %></p>
+          </li>
+        <% end %>
+      </ul>
+  </div>
+</div>
