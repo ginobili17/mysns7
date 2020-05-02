@@ -1,6 +1,9 @@
 class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
 
+  has_many :post_categories
+  has_many :categories, through: :post_categories
+
   has_many :comments, dependent: :destroy
   belongs_to :user
 
