@@ -3,6 +3,7 @@ class PostsController < ApplicationController
   
 
   def index
+    @category = Category.all
     @posts = Post.all.order(created_at: 'desc').includes(:user)
   end
 
@@ -17,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.create(post_params)
     if @post.save
       redirect_to posts_path
     else
