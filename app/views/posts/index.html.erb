@@ -4,6 +4,11 @@
   <div class="top-contents">
     <h2>Favorites</h2>
   </div>
+  <ul class="categories">
+    <% @category.each do |category| %>
+    <li class="category"><%= link_to "#{category.name}", "categories/#{category.id}" %></li>
+    <% end %>
+  </ul>
 
   <div class="contents">
     <div class="content">

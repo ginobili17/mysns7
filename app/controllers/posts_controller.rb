@@ -3,6 +3,7 @@ class PostsController < ApplicationController
   
 
   def index
+    @category = Category.all
     @posts = Post.all.order(created_at: 'desc').includes(:user)
   end
 
