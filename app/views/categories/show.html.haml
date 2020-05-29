@@ -1,0 +1,9 @@
+= render 'posts/header_top'
+%h2= @category.name
+.contents
+  .content
+    %ul.content-lists
+      - @category.posts.each do |category_post|
+        %li.content-list
+          = image_tag(category_post.image.url, class:'post-image')
+          %p.post-title= category_post.title

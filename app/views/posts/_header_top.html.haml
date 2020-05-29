@@ -1,0 +1,16 @@
+%header.header
+  %h1.header-top= link_to "MY SNS", root_path, class: "btn rootbtn"
+  - if user_signed_in?
+    %ul.header-lists
+      %li.header-list
+        = link_to current_user.nickname, "/users/#{current_user.id}", class: "btn headerbtn"
+      %li.header-list
+        = link_to "ADD NEW", new_post_path, class: "btn addnewbtn", class: "btn headerbtn"
+      %li.header-list
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn headerbtn"
+  - else
+    %ul.header-lists
+      %li.header-list
+        = link_to "ログイン", new_user_session_path, class: 'post'
+      %li.header-list
+        = link_to "新規登録", new_user_registration_path, class: 'post'

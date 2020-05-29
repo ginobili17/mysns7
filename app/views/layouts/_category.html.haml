@@ -1,0 +1,3 @@
+.parent
+  - @category.each do |category|
+    .parent-category= link_to "#{category.name}", "categories/#{category.id}"

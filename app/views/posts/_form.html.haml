@@ -1,0 +1,14 @@
+= form_for @post do |f|
+  - if @post.errors.messages[:category_ids].any?
+    %span.error= @post.errors.messages[:category_ids][0]
+  = f.collection_select :category_ids, Category.all, :id, :name
+  - if @post.errors.messages[:title].any?
+    %span.error= @post.errors.messages[:title][0]
+  %p= f.text_field :title, placeholder: 'title'
+  - if @post.errors.messages[:body].any?
+    %span.error= @post.errors.messages[:body][0]
+  %p= f.text_area :body, placeholder: 'text'
+  - if @post.errors.messages[:image].any?
+    %span.error= @post.errors.messages[:image][0]
+  = f.file_field :image
+  %p= f.submit

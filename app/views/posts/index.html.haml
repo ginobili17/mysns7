@@ -1,0 +1,17 @@
+= render 'header'
+
+.main
+  .top-contents
+    %h2 Favorites
+  -# %ul.categories
+  -#   - @category.each do |category|
+  -#     %li.category= link_to "#{category.name}", "categories/#{category.id}"
+  .contents
+    .content
+      %ul.content-lists
+        - @posts.each do |post|
+          %li.content-list
+            - if post.image?
+              = link_to image_tag(post.image.url, class: 'post-image'), post_path(post)
+              .post-title-
+              %p.post-title= post.title

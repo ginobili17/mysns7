@@ -1,0 +1,30 @@
+= render 'header_top'
+.contents
+  %h2= @post.title
+  %span.name
+    %a{:href => "/users/#{@post.user.id}"}
+      %p= @post.user.nickname
+  %p= image_tag @post.image.url
+  %div{:class => "buttons_#{@post.id}"}= render partial: 'likes/like'
+  - @post.categories.each do |category|
+    %p= category.name
+  %p= simple_format @post.body
+  - if user_signed_in? && current_user.id == @post.user_id
+    = link_to 'EDIT', edit_post_path(@post), class: "btn editbtn"
+    = link_to 'DELETE', post_path(@post), method: :delete, class: "btn deletebtn", data: { confirm: '削除しますか？' }
+  %h3 Comments
+  .container
+    - if current_user
+      = form_for([@post, @post.comments.build]) do |f|
+        %p
+          = f.text_field :body
+        %p
+          = f.submit
+    .comments
+      - if @comments
+        - @comments.each do |comment|
+          %p
+            %strong
+              = link_to comment.user.name, "/users/#{comment.user_id}"
+              ：
+            = comment.body

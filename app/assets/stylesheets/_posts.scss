@@ -9,10 +9,58 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
 }
+
+a:visited { text-decoration:none }
 
 
  /* ヘッダー */
+
+ .parent {
+  display: none;
+}
+
+#category-area {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+
+  .category-box {
+    position: absolute;
+    background-color: white;
+
+    .parent {
+      box-shadow: 1px 1px 4px;
+      height: 100%;
+      background-color: white;
+    }
+
+    .parent-category {
+      padding: 6px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+      color: black;
+      &:hover {
+        &:hover {
+          background-color: lightblue;
+        }
+      }
+    }
+  }
+
+  &:hover {
+
+    .parent {
+      display: block;
+
+      .parent-category {
+        width: 150px;
+      }
+    }
+  }
+}
 
  .header {
    height: 70px;
@@ -20,6 +68,7 @@ a {
    display: flex;
    justify-content: space-between;
    position: fixed;
+   background-color: white;
   }
 
   .header-top {
@@ -29,12 +78,12 @@ a {
  .rootbtn {
    font-weight: bold;
    font-size: 30px;
+   color: lightsteelblue;
   }
 
   .header-lists {
-    width: 310px;
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
   }
 
   .header-list {
@@ -42,6 +91,10 @@ a {
     font-weight: bold;
     font-size: 20px;
     line-height: 70px;
+    color: lightsteelblue;
+    .headerbtn {
+      color: lightsteelblue;
+    }
   }
 
   
@@ -72,6 +125,7 @@ h2 {
 
  .contents {
    margin: 0 auto;
+   width: 1400px;
  }
 
  .content {
@@ -81,12 +135,18 @@ h2 {
  .content-lists {
    display: flex;
    flex-wrap: wrap;
+   padding: 30px;
  }
  
 .content-list {
   width: 288px;
-  padding-bottom: 35px;
-  padding-right: 45px;
+  padding: 40px 23px;
+  
+  .post-image {
+    height: 288px;
+    width: 288px;
+
+  }
 }
 
  input[type="text"], textarea {
