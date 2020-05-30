@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: mysns7_production
-  username: mysns7
+  username: root
   password: <%= ENV['MYSNS7_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

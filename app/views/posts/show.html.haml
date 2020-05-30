@@ -9,6 +9,12 @@
   - @post.categories.each do |category|
     %p= category.name
   %p= simple_format @post.body
+
+  .show
+  .show__address
+    = @post.spot.address
+  .show__maps{id: "show_map", style: "height: 320px; width: 400px;"}
+
   - if user_signed_in? && current_user.id == @post.user_id
     = link_to 'EDIT', edit_post_path(@post), class: "btn editbtn"
     = link_to 'DELETE', post_path(@post), method: :delete, class: "btn deletebtn", data: { confirm: '削除しますか？' }
