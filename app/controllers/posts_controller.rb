@@ -11,10 +11,15 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @comment = Comment.new
     @comments = @post.comments.includes(:user)
+    @lat = @post.spot.latitude
+    @lng = @post.spot.longitude
+    gon.lat = @lat
+    gon.lng = @lng
   end
 
   def new
     @post = Post.new
+    @post.build_spot
   end
 
   def create
@@ -47,7 +52,7 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :body, :image, :category_ids).merge(user_id: current_user.id)
+      params.require(:post).permit(:title, :body, :image, :category_ids, spot_attributes: [:address]).merge(user_id: current_user.id)
     end
 
     def move_to_index

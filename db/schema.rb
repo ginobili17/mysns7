@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_28_113856) do
+ActiveRecord::Schema.define(version: 2020_05_30_075853) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -61,6 +61,14 @@ ActiveRecord::Schema.define(version: 2020_05_28_113856) do
     t.index ["user_id"], name: "index_sns_credentials_on_user_id"
   end
 
+  create_table "spots", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.bigint "post_id"
+    t.index ["post_id"], name: "index_spots_on_post_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "firstname", null: false
@@ -80,4 +88,5 @@ ActiveRecord::Schema.define(version: 2020_05_28_113856) do
 
   add_foreign_key "comments", "posts"
   add_foreign_key "sns_credentials", "users"
+  add_foreign_key "spots", "posts"
 end

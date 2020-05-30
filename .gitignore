@@ -27,3 +27,9 @@
 /config/master.key
 
 public/uploads/*
+
+/.env
+
+/config/master.key
+
+.DS_Store
