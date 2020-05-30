@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock " 3.14.0"
 
-set :application, "musns7"
+set :application, "mysns7"
 set :repo_url, "git@github.com:ginobiri17/mysns7.git"
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
