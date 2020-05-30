@@ -2,7 +2,7 @@
 lock " 3.14.0"
 
 set :application, "mysns7"
-set :repo_url, "git@github.com:ginobiri17/mysns7.git"
+set :repo_url, "git@github.com:ginobili17/mysns7.git"
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
