@@ -43,11 +43,13 @@ Test Account
   <img src="https://github.com/ginobili17/mysns7/blob/master/login.png" width="300" height="300">
     
   googleで登録する場合<br>
+  ※ローカルのみで確認<br>
   <img src="https://github.com/ginobili17/mysns7/blob/master/googlesignup.png" width="300" height="300">
     
   facebookで登録、ログインする場合、まだgoogleで登録してない時のgoogleでログインをした場合<br>
   ニックネーム、emailが自動で入力されます。<br>
   次回から何も入力せずにログインできるようになります。<br>
+  ※ローカルのみで確認<br>
   <img src="https://github.com/ginobili17/mysns7/blob/master/facebooksignup.png" width="300" height="300">
   
   
