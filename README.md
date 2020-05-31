@@ -33,18 +33,22 @@ pass: asd17f
 Test Account  
   
   Email: test@gmail.com <br>
-  password: test123
+  password: test123<br>
+    
+  新規登録ページ<br>
+  <img src="https://github.com/ginobili17/mysns7/blob/master/signup.png" width="300" height="300">
+  
+    
+  ログインページ<br>
+  <img src="https://github.com/ginobili17/mysns7/blob/master/login.png" width="300" height="300">
+  
   
 ### 2. 投稿
   
-ヘッダーのADD NEWより新規投稿をする事ができます。 <br>
+ヘッダーのADD NEWより内容を入力して新規投稿をする事ができます。 <br>
   
-新規投稿ページ入力内容 <br>
-  ・カテゴリー <br>
-  ・タイトル <br>
-  ・説明文 <br>
-  ・画像ファイル選択 <br>
-  ・テイクアウト先の住所 <br>
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png" width="300" height="300">
+　　
   
 ### 3. 投稿内容の確認
   
