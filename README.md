@@ -28,7 +28,7 @@ pass: asd17f
   
 ### 1. ユーザー新規登録/ログイン（SNS認証）
   
-ユーザーのニックネームを決めていただき、各情報を入力することで新規登録、ログインができます。
+各情報を入力することで新規登録、ログインができます。
   
 Test Account  
   
@@ -41,6 +41,15 @@ Test Account
     
   ログインページ<br>
   <img src="https://github.com/ginobili17/mysns7/blob/master/login.png" width="300" height="300">
+    
+  googleで登録する場合<br>
+  <img src="https://github.com/ginobili17/mysns7/blob/master/googlesignup.png" width="300" height="300">
+    
+  facebookで登録、ログインする場合、まだgoogleで登録してない時のgoogleでログインをした場合<br>
+  ニックネーム、emailが自動で入力されます。<br>
+  次回から何も入力せずにログインできるようになります。<br>
+  <img src="https://github.com/ginobili17/mysns7/blob/master/facebooksignup.png" width="300" height="300">
+  
   
   
 ### 2. 投稿
