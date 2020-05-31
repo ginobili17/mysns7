@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  before_action :basic_auth
+  before_action :basic_auth, if: :production?
 
   private
 
@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
       username == Rails.application.credentials[:basic_auth][:user] &&
       password == Rails.application.credentials[:basic_auth][:pass]
     end
+  end
+
+  def production?
+    Rails.env.production?
   end
   
   protected
