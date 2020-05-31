@@ -48,11 +48,17 @@ Test Account
   
 ### 3. 投稿内容の確認
   
-トップページに投稿された写真が並んで行きます。 <br>
 写真をクリックすると投稿詳細ページに遷移する事ができます。 <br>
-投稿詳細ページでは投稿した際に入力された内容が確認できます。 <br>
-またヘッダーの「カテゴリから探す」からカテゴリを選択する事でカテゴリー別の投稿を表示する事ができます。
+ヘッダーの「カテゴリから探す」からカテゴリを選択する事でカテゴリー別の投稿を表示する事ができます。  
 
+一覧ページ<br>
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E4%B8%80%E8%A6%A7.jpg" width="300" height="250"><br>
+カテゴリー別一覧ページ<br>
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E3%82%AB%E3%83%86%E3%82%B3%E3%82%99%E3%83%AA%E5%88%A5%E4%B8%80%E8%A6%A7.jpg" width="300" height="250"><br>
+投稿詳細ページ１<br>　　
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0.png" width="300" height="300"><br>
+投稿詳細ページ２<br> 
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%EF%BC%92.png" width="300" height="300">
 
 ### 4. コメント機能
   
