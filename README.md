@@ -51,7 +51,8 @@ Test Account
 写真をクリックすると投稿詳細ページに遷移する事ができます。 <br>
 ヘッダーの「カテゴリから探す」からカテゴリを選択する事でカテゴリー別の投稿を表示する事ができます。
 
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0.png" width="350" height="300">
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0.png" width="350" height="300">  
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%EF%BC%92.png" width="350" height="300">
 
 ### 4. コメント機能
   
