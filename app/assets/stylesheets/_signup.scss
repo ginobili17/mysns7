@@ -1,0 +1,44 @@
+.account-page {
+  background-color: white;
+}
+
+.account-page__signin {
+  width: 80%;
+  background-color: white;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+
+  &__template {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.account-page__create-btn {
+    line-height: 35px;
+    background-color: yellow;
+    color: darkslategrey;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.account-page__facebook-btn {
+    line-height: 35px;
+    background-color: #3B5998;
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.account-page__google-btn {
+  line-height: 35px;
+  background-color: #DB4437;
+  color: white;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
