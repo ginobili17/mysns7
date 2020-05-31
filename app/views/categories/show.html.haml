@@ -5,5 +5,5 @@
     %ul.content-lists
       - @category.posts.each do |category_post|
         %li.content-list
-          = image_tag(category_post.image.url, class:'post-image')
+          = link_to image_tag(category_post.image.url, class: 'post-image'), post_path(category_post)
           %p.post-title= category_post.title
