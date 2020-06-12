@@ -1,0 +1,117 @@
+#like-button {
+  width: 100px;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.show-exp {
+  font-size: 17px;
+  font-weight: bold;
+  background:linear-gradient(transparent 70%, #FFFF00 0%);
+  width: 200px;
+  margin: 0 auto 10px;
+}
+
+.category-name {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.show-title {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.show-body {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.show__address {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.edit {
+  margin: 50px 0 70px;
+  display: flex;
+  justify-content: space-evenly;
+  .editbtn {
+    width: 100px;
+    color: lightslategray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .deletebtn {
+    width: 100px;
+    color: lightslategray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+#comment_body {
+  margin-bottom: 30px;
+}
+
+.comment-btn {
+  margin-bottom: 30px;
+
+}
+
+.comments {
+  margin-bottom: 20px;
+
+  .comment-user {
+
+    &-link {
+      width: 200px;
+      margin: 0 auto;
+      color: lightsteelblue;
+      font-size: 25px;
+    }
+  }
+
+  .comment-body {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.show-contents {
+  width: 80%;
+  background-color: white;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+
+  .show-nickname-exp {
+    padding-top: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    background:linear-gradient(transparent 96%, #FFFF00 0%);
+    width: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .name {
+
+    .user-name {
+      margin-bottom: 50px;
+      
+      &-link {
+        color: lightsteelblue;
+      }
+    }
+  }
+
+  .post-image {
+    width: 450px;
+    margin-bottom: 20px;
+
+  }
+}

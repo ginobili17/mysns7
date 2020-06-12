@@ -1,20 +1,30 @@
 = form_with(model: @post, local: true, multipart: true) do |f|
   - if @post.errors.messages[:category_ids].any?
     %span.error= @post.errors.messages[:category_ids][0]
+  .post-exp
+    投稿したいジャンルを選んでね
   = f.collection_select :category_ids, Category.all, :id, :name
   - if @post.errors.messages[:title].any?
     %span.error= @post.errors.messages[:title][0]
-  %p= f.text_field :title, placeholder: 'title'
+  .post-exp
+    商品名、お店の名前などタイトルを入力してね
+  %p= f.text_field :title, placeholder: 'title', class: "input-box"
   - if @post.errors.messages[:body].any?
     %span.error= @post.errors.messages[:body][0]
-  %p= f.text_area :body, placeholder: 'text'
+  .post-exp
+    商品のレビューやおすすめのポイントを入力してね
+  %p= f.text_area :body, placeholder: 'text', class: "input-box"
   - if @post.errors.messages[:image].any?
     %span.error= @post.errors.messages[:image][0]
+  .post-exp
+    商品の画像を登録してね
   = f.file_field :image
+  .post-exp
+    テイクアウトしたお店または住所を検索してね
   .spot
     = f.fields_for :spot do |s|
       = s.label :address, "レビュー場所(Google Mapで検索)", class: 'spot__title'
       = s.text_field :address, placeholder: "スポットを入力", id: "address", class: 'spot__text'
     %input{onclick: "codeAddress()", type: "button", value: "検索する"}
-    .map{id: "map", style: "height: 320px; width: 640px;"}
-  %p= f.submit
+    .map{id: "map", style: "margin: 30px auto; height: 320px; width: 640px;"}
+  = f.submit "投稿", {class: "new-btn"}

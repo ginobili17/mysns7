@@ -1,36 +1,55 @@
 = render 'header_top'
-.contents
-  %h2= @post.title
-  %span.name
-    %a{:href => "/users/#{@post.user.id}"}
-      %p= @post.user.nickname
-  %p= image_tag @post.image.url
-  %div{:class => "buttons_#{@post.id}"}= render partial: 'likes/like'
-  - @post.categories.each do |category|
-    %p= category.name
-  %p= simple_format @post.body
+.show-page
+  -# %h2= @post.title
+  .show-contents
+    .show-nickname-exp
+      投稿者
+    %span.name
+      .user-name
+        %a{:href => "/users/#{@post.user.id}", class: "user-name-link"}
+          = @post.user.nickname
+    = image_tag @post.image.url, {class: "post-image"}
+    .show-exp
+      いいね
+    %div{:class => "buttons_#{@post.id}"}= render partial: 'likes/like'
+    - @post.categories.each do |category|
+      .show-exp
+        カテゴリー
+      .category-name
+        = category.name
+      .show-exp
+        タイトル
+      .show-title
+        = @post.title
+      .show-exp
+        おすすめポイント
+      .show-body
+        = simple_format @post.body
 
-  .show
-  .show__address
-    = @post.spot.address
-  .show__maps{id: "show_map", style: "height: 320px; width: 400px;"}
+    .show
+    .show-exp
+      お店名または住所
+    .show__address
+      = @post.spot.address
+    .show__maps{id: "show_map", style: "margin: 30px auto; height: 320px; width: 640px;"}
 
-  - if user_signed_in? && current_user.id == @post.user_id
-    = link_to 'EDIT', edit_post_path(@post), class: "btn editbtn"
-    = link_to 'DELETE', post_path(@post), method: :delete, class: "btn deletebtn", data: { confirm: '削除しますか？' }
-  %h3 Comments
-  .container
-    - if current_user
-      = form_for([@post, @post.comments.build]) do |f|
-        %p
-          = f.text_field :body
-        %p
-          = f.submit
-    .comments
-      - if @comments
-        - @comments.each do |comment|
+    .edit
+      - if user_signed_in? && current_user.id == @post.user_id
+        = link_to '編集', edit_post_path(@post), class: "btn editbtn"
+        = link_to '削除', post_path(@post), method: :delete, class: "btn deletebtn", data: { confirm: '削除しますか？' }
+    .show-exp
+      Comments
+    .container
+      - if current_user
+        = form_for([@post, @post.comments.build]) do |f|
           %p
-            %strong
-              = link_to comment.user.name, "/users/#{comment.user_id}"
-              ：
-            = comment.body
+            = f.text_field :body
+          .comment-btn
+            = f.submit
+      .comments
+        - if @comments
+          - @comments.each do |comment|
+            .comment-user
+              = link_to comment.user.nickname, "/users/#{comment.user_id}", class: "comment-user-link"
+            .comment-body
+              = comment.body
