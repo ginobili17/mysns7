@@ -58,9 +58,11 @@ facebookで登録、ログインする場合、まだgoogleで登録してない
   
 ヘッダーのADD NEWより内容を入力して新規投稿をする事ができます。 <br>
   
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png" width="600" height="500">
-　　
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%91.png" width="900" height="500">
+ 　
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%92.png" width="900" height="500">
   
+
 ### 3. 投稿内容の確認
   
 写真をクリックすると投稿詳細ページに遷移する事ができます。 <br>
@@ -68,20 +70,21 @@ facebookで登録、ログインする場合、まだgoogleで登録してない
 
 一覧ページ<br>
 
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E4%B8%80%E8%A6%A7%E8%A1%A8%E7%A4%BA%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.jpg" width="600" height="400"><br>
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E4%B8%80%E8%A6%A7%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%91.jpg" width="９00" height="500"><br>
 
 カテゴリー別一覧ページ<br>
 
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E3%82%AB%E3%83%86%E3%82%B3%E3%82%99%E3%83%AA%E3%83%BC%E5%88%A5%E4%B8%80%E8%A6%A7%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png" width="600" height="400"><br>
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E3%82%AB%E3%83%86%E3%82%B3%E3%82%99%E3%83%AA%E4%B8%80%E8%A6%A7%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%91.png" width="900" height="500"><br>
 
-投稿詳細ページ１<br>
+投稿詳細ページ<br>
 
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%EF%BC%91.png" width="600" height="550">
-
-投稿詳細ページ２<br>
-
-<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%92.png" width="600" height="450">
-
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%91.png" width="900" height="500">
+  
+  
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%92.png" width="900" height="500">   
+   
+<img src="https://github.com/ginobili17/mysns7/blob/master/%E6%8A%95%E7%A8%BF%E8%A9%B3%E7%B4%B0%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%EF%BC%93.png" width="900" height="500">
+   
 ### 4. コメント機能
   
 投稿詳細ページより投稿に対してのコメントをする事ができます。
